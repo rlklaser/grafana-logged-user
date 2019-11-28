@@ -25,7 +25,7 @@ public class GrafanaUserAPI {
 	@Produces("application/json")
 	public String query(@DefaultValue("none") @HeaderParam("X-Grafana-User") String user, String query) {
 		System.out.println("query:" + query);
-		return "[" + user + "]"; //"[{\"user\" : \"" + user + "\"}]";
+		return "[" + user + "]"; 
 	}
 
 	@POST
@@ -35,10 +35,5 @@ public class GrafanaUserAPI {
 	public String search(@DefaultValue("none") @HeaderParam("X-Grafana-User") String user, String query) {
 		System.out.println("search:" + query);
 		return "[ \"" + user + "\"]"; 
-//		return "[" +
-//				"{\"user\" : \"" + user + "\"}" +
-//				//"," +
-//				//"{\"user\" : \"" + user + "\"}" +
-//				"]";
 	}
 }
