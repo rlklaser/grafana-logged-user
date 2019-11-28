@@ -10,3 +10,4 @@ logging = true
 send_user_header = true
 
 
+https://github.com/rlklaser/grafana-logged-user/blob/master/2019-11-28%2015_36_26-.png
